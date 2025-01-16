@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="welcome-section">
+    <h1>Bienvenido al Sistema de Pase de Lista</h1>
+    <p>Administra fácilmente la asistencia de tus estudiantes</p>
+    <div class="cta-buttons">
+        <a href="{{ url_for('lista_estudiantes') }}" class="btn btn-primary">Ver Lista de Estudiantes</a>
+        <a href="{{ url_for('registro_asistencia') }}" class="btn btn-secondary">Registro de Asistencia</a>
+    </div>
+</div>
+{% endblock %}
